@@ -3,3 +3,7 @@
 @theme {
     --font-montserrat: "Montserrat", serif;
 }
+
+a, h1 {
+    @apply font-montserrat;
+}

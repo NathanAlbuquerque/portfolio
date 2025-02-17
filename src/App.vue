@@ -59,7 +59,7 @@ const projetosProfisionais = [
   <main class="py-12 flex flex-col items-center gap-20">
 
     <div class="container" id="skills">
-      <h1 class="text-6xl font-black">Nathan Reinaldo de Albuquerque</h1>
+      <h1 class="text-6xl font-black">Nathan Albuquerque</h1>
       <p class="mt-8 text-4xl font-bold text-gray-800">Skills</p>
       <div class="mt-6 px-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 place-items-center">
         <SkillItem v-for="skill in skills" :key="skill" :titulo="skill"/>
@@ -92,6 +92,11 @@ const projetosProfisionais = [
         <a href="https://github.com/NathanAlbuquerque" target="_blank" rel="noopener noreferrer" class="w-14 h-14 grid place-content-center rounded-full bg-cyan-300 hover:scale-105 transition"><img src="@/assets/imagens/github.svg" width="38" height="38" alt=""></a>
         <a href="https://www.linkedin.com/in/nathan-albuquerque/" target="_blank" rel="noopener noreferrer" class="w-14 h-14 grid place-content-center rounded-full bg-cyan-300 hover:scale-105 transition"><img src="@/assets/imagens/linkedin.svg" width="28" height="28" alt=""></a>
       </div>
+    </div>
+
+    <div class="container flex justify-between items-center">
+      <p class="text-sm font-bold">NathanAlbuquerque</p>
+      <p class="text-sm font-thin">&copy; 2025 Nathan Albuquerque</p>
     </div>
 
   </main>

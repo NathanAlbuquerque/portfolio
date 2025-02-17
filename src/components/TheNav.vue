@@ -1,10 +1,14 @@
-<script setup></script>
+<script setup>
+const links = [
+    { url: '#skills', titulo: 'Skills' },
+    { url: '#', titulo: 'Profissional' },
+    { url: '#', titulo: 'Pessoal' },
+    { url: '#', titulo: 'Sobre mim' },
+]
+</script>
 
 <template>
-    <nav class="py-1.5 px-9 rounded-full space-x-10 bg-slate-100 border border-slate-300 font-medium tracking-wide">
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
+    <nav class="px-9 rounded-full space-x-10 font-medium tracking-wide">
+        <a v-for="link in links" :key="link.titulo" :href="link.url" class="hover:underline">{{ link.titulo }}</a>
     </nav>
 </template>

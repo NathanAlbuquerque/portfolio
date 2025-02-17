@@ -1,7 +1,7 @@
 <script setup>
 const links = [
     { url: '#skills', titulo: 'Skills' },
-    { url: '#', titulo: 'Profissional' },
+    { url: '#projetos-profissionais', titulo: 'Profissional' },
     { url: '#', titulo: 'Pessoal' },
     { url: '#', titulo: 'Sobre mim' },
 ]

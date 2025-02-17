@@ -83,6 +83,16 @@ const projetosProfisionais = [
       </div>
     </div>
 
+    <div class="container bg-radial from-slate-300 to-white to-60% h-px w-full"></div>
+
+    <div class="container" id="sobre-mim">
+      <p class="text-4xl font-bold text-gray-800">Sobre mim</p>
+      <p class="mt-4 text-xl text-gray-800">Jovem desenrolado, responsável e estudioso, tenho alguns projetos no ar, mas busco uma oportunidade remota. Se interessou pelos meus serviços? Me mande um e-mail.</p>
+      <div class="flex space-x-6 mt-6">
+        <a href="https://github.com/NathanAlbuquerque" target="_blank" rel="noopener noreferrer" class="w-14 h-14 grid place-content-center rounded-full bg-cyan-300 hover:scale-105 transition"><img src="@/assets/imagens/github.svg" width="38" height="38" alt=""></a>
+        <a href="https://www.linkedin.com/in/nathan-albuquerque/" target="_blank" rel="noopener noreferrer" class="w-14 h-14 grid place-content-center rounded-full bg-cyan-300 hover:scale-105 transition"><img src="@/assets/imagens/linkedin.svg" width="28" height="28" alt=""></a>
+      </div>
+    </div>
+
   </main>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </template>

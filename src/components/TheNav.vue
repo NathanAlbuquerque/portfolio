@@ -2,8 +2,8 @@
 const links = [
     { url: '#skills', titulo: 'Skills' },
     { url: '#projetos-profissionais', titulo: 'Profissional' },
-    { url: '#', titulo: 'Pessoal' },
-    { url: '#', titulo: 'Sobre mim' },
+    // { url: '#', titulo: 'Pessoal' },
+    { url: '#sobre-mim', titulo: 'Sobre mim' },
 ]
 </script>
 

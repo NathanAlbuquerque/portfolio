@@ -96,6 +96,7 @@ const projetosProfisionais = [
       <div class="flex space-x-6 mt-6">
         <a href="https://github.com/NathanAlbuquerque" target="_blank" rel="noopener noreferrer" class="w-14 h-14 grid place-content-center rounded-full bg-cyan-300 hover:scale-105 transition"><img src="@/assets/imagens/github.svg" width="38" height="38" alt=""></a>
         <a href="https://www.linkedin.com/in/nathan-albuquerque/" target="_blank" rel="noopener noreferrer" class="w-14 h-14 grid place-content-center rounded-full bg-cyan-300 hover:scale-105 transition"><img src="@/assets/imagens/linkedin.svg" width="28" height="28" alt=""></a>
+        <a href="mailto:nathan.nra@outlook.com" target="_blank" rel="noopener noreferrer" class="w-14 h-14 grid place-content-center rounded-full bg-cyan-300 hover:scale-105 transition"><img src="@/assets/imagens/email.svg" width="38" height="38" alt=""></a>
       </div>
     </div>
 

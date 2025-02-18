@@ -1,6 +1,10 @@
 <script setup>
 import { ref } from 'vue';
 
+const temaIcones = {
+    dark: new URL('@/assets/imagens/dark-mode.svg', import.meta.url).href,
+    light: new URL('@/assets/imagens/light-mode.svg', import.meta.url).href,
+}
 const links = [
     { url: '#skills', titulo: 'Skills' },
     { url: '#projetos-profissionais', titulo: 'Profissional' },
@@ -20,6 +24,6 @@ document.documentElement.classList.toggle("dark", localStorage.theme === "dark" 
 <template>
     <nav class="px-9 rounded-full space-x-6 sm:space-x-10 font-medium tracking-wide">
         <a v-for="link in links" :key="link.titulo" :href="link.url" class="text-sm sm:text-base hover:underline dark:text-white">{{ link.titulo }}</a>
-        <img @click="mudarTema('light')" :src="`src/assets/imagens/${tema}-mode.svg`" class="inline cursor-pointer hover:animate-pulse" width="20" height="20" alt="">
+        <img @click="mudarTema('light')" :src="temaIcones[tema]" class="inline cursor-pointer hover:animate-pulse" width="20" height="20" alt="">
     </nav>
 </template>

@@ -8,37 +8,37 @@ const skills = ['HTML', 'CSS', 'TailwindCSS', 'JavaScript', 'NodeJS', 'TypeScrip
 const projetosProfisionais = [
   {
     url: 'https://www.lojazacks.com.br/',
-    imagem: 'src/assets/imagens/projeto-profissional-loja-zacks.png',
+    imagem: new URL('@/assets/imagens/projeto-profissional-loja-zacks.png', import.meta.url).href,
     nome: 'Site Institucional + e-commerce de venda de instrumentos',
     servico: 'Manutenção e suporte',
   },
   {
     url: 'https://campeonatovoolivre.com.br/',
-    imagem: 'src/assets/imagens/projeto-profissional-11-campeonato-de-voo-livre.png',
+    imagem: new URL('@/assets/imagens/projeto-profissional-11-campeonato-de-voo-livre.png', import.meta.url).href,
     nome: 'Landing page para divulgação de evento',
     servico: 'Projeto completo',
   },
   {
     url: 'https://gruponovaluz.com.br/',
-    imagem: 'src/assets/imagens/projeto-profissional-eccommerce-nova-luz.png',
+    imagem: new URL('@/assets/imagens/projeto-profissional-eccommerce-nova-luz.png', import.meta.url).href,
     nome: 'Site Institucional + e-commerce de venda de materiais elétricos',
     servico: 'Projeto completo (menos API de pagamentos)',
   },
   {
     url: 'https://racoesaquario.com.br/',
-    imagem: 'src/assets/imagens/projeto-profissional-racoes-aquario.png',
+    imagem: new URL('@/assets/imagens/projeto-profissional-racoes-aquario.png', import.meta.url).href,
     nome: 'Site institucional',
     servico: 'Manutenção e suporte',
   },
   {
     url: 'https://oculoscarpediem.com.br/',
-    imagem: 'src/assets/imagens/projeto-profissional-oculos-carpe-diem.png',
+    imagem: new URL('@/assets/imagens/projeto-profissional-oculos-carpe-diem.png', import.meta.url).href,
     nome: 'Site institucional de marca de óculos',
     servico: 'Atualização de manutenção',
   },
   {
     url: 'https://clinicaprovir.com/',
-    imagem: 'src/assets/imagens/projeto-profissional-clinica-provir.png',
+    imagem: new URL('@/assets/imagens/projeto-profissional-clinica-provir.png', import.meta.url).href,
     nome: 'Site institucional de clinica admissional',
     servico: 'Projeto completo',
   },

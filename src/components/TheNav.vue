@@ -18,8 +18,8 @@ document.documentElement.classList.toggle("dark", localStorage.theme === "dark" 
 </script>
 
 <template>
-    <nav class="px-9 rounded-full space-x-10 font-medium tracking-wide">
-        <a v-for="link in links" :key="link.titulo" :href="link.url" class="hover:underline dark:text-white">{{ link.titulo }}</a>
+    <nav class="px-9 rounded-full space-x-6 sm:space-x-10 font-medium tracking-wide">
+        <a v-for="link in links" :key="link.titulo" :href="link.url" class="text-sm sm:text-base hover:underline dark:text-white">{{ link.titulo }}</a>
         <img @click="mudarTema('light')" :src="`src/assets/imagens/${tema}-mode.svg`" class="inline cursor-pointer hover:animate-pulse" width="20" height="20" alt="">
     </nav>
 </template>

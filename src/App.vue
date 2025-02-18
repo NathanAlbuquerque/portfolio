@@ -58,11 +58,11 @@ const projetosProfisionais = [
   <div class="h-18"></div>
 
   <!-- <main class="bg-gray-950/[2.5%] after:rounded-lg after:inset-ring after:inset-ring-gray-950/5 dark:after:inset-ring-white/10 bg-[image:radial-gradient(var(--pattern-fg)_1px,_transparent_0)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-gray-950)]/5 dark:[--pattern-fg:var(--color-white)]/10"> -->
-  <main class="py-12 flex flex-col items-center gap-20">
+  <main class="p-5 sm:p-0 py-12 flex flex-col items-center gap-20">
 
     <div class="container" id="skills">
-      <h1 class="text-6xl font-black dark:text-white">Nathan Albuquerque</h1>
-      <p class="mt-8 text-4xl font-bold text-gray-800 dark:text-gray-300">Skills</p>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black dark:text-white">Nathan Albuquerque</h1>
+      <p class="mt-8 text-3xl lg:text-4xl font-bold text-gray-800 dark:text-gray-300">Skills</p>
       <div class="mt-6 px-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 place-items-center">
         <SkillItem v-for="skill in skills" :key="skill" :titulo="skill"/>
       </div>

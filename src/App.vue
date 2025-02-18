@@ -92,7 +92,7 @@ const projetosProfisionais = [
     <div class="container relative">
       <span class="absolute -top-30" id="sobre-mim"></span>
       <p class="text-4xl font-bold text-gray-800 dark:text-gray-300">Sobre mim</p>
-      <p class="mt-4 text-xl text-gray-800 dark:text-gray-300">Jovem desenrolado, responsável e estudioso, tenho alguns projetos no ar, mas busco uma oportunidade remota. Se interessou pelos meus serviços? Me mande um e-mail.</p>
+      <p class="mt-4 text-xl text-gray-800 dark:text-gray-300">Jovem desenrolado, responsável e estudioso. Tenho alguns projetos no ar e mas busco uma oportunidade remota. Se interessou por estes serviços? Me envia um e-mail.</p>
       <div class="flex space-x-6 mt-6">
         <a href="https://github.com/NathanAlbuquerque" target="_blank" rel="noopener noreferrer" class="w-14 h-14 grid place-content-center rounded-full bg-cyan-300 hover:scale-105 transition"><img src="@/assets/imagens/github.svg" width="38" height="38" alt=""></a>
         <a href="https://www.linkedin.com/in/nathan-albuquerque/" target="_blank" rel="noopener noreferrer" class="w-14 h-14 grid place-content-center rounded-full bg-cyan-300 hover:scale-105 transition"><img src="@/assets/imagens/linkedin.svg" width="28" height="28" alt=""></a>

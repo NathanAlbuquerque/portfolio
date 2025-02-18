@@ -49,7 +49,7 @@ const projetosProfisionais = [
 
 <template>
   <header class="flex justify-center my-5">
-    <div class="container fixed py-2.5 px-4.5 flex justify-between items-center rounded-4xl bg-slate-200/20 dark:bg-slate-900/20 border border-slate-200/30 dark:border-slate-700/30 backdrop-blur-sm shadow-md">
+    <div class="container fixed py-2.5 px-4.5 flex justify-between items-center rounded-4xl bg-slate-200/20 dark:bg-slate-900/20 border border-slate-200/30 dark:border-slate-700/30 backdrop-blur-sm shadow-md z-1">
       <img src="@/assets/imagens/perfil-nathan-albuquerque.png" class="rounded-full" width="40" height="40" alt="Perfil Nathan Albuquerque">
       <TheNav/>
     </div>
@@ -60,7 +60,8 @@ const projetosProfisionais = [
   <!-- <main class="bg-gray-950/[2.5%] after:rounded-lg after:inset-ring after:inset-ring-gray-950/5 dark:after:inset-ring-white/10 bg-[image:radial-gradient(var(--pattern-fg)_1px,_transparent_0)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-gray-950)]/5 dark:[--pattern-fg:var(--color-white)]/10"> -->
   <main class="p-5 sm:p-0 py-12 flex flex-col items-center gap-20">
 
-    <div class="container" id="skills">
+    <div class="container relative">
+      <span class="absolute -top-30" id="skills"></span>
       <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black dark:text-white">Nathan Albuquerque</h1>
       <p class="mt-8 text-3xl lg:text-4xl font-bold text-gray-800 dark:text-gray-300">Skills</p>
       <div class="mt-6 px-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 place-items-center">
@@ -70,7 +71,8 @@ const projetosProfisionais = [
 
     <Divisor/>
 
-    <div class="container" id="projetos-profissionais">
+    <div class="container relative">
+      <span class="absolute -top-30" id="projetos-profissionais"></span>
       <p class="text-4xl font-bold text-gray-800 dark:text-gray-300">Projetos Profisionais</p>
       <div class="mt-6 px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center content-center">
 
@@ -87,7 +89,8 @@ const projetosProfisionais = [
 
     <Divisor/>
 
-    <div class="container" id="sobre-mim">
+    <div class="container relative">
+      <span class="absolute -top-30" id="sobre-mim"></span>
       <p class="text-4xl font-bold text-gray-800 dark:text-gray-300">Sobre mim</p>
       <p class="mt-4 text-xl text-gray-800 dark:text-gray-300">Jovem desenrolado, responsável e estudioso, tenho alguns projetos no ar, mas busco uma oportunidade remota. Se interessou pelos meus serviços? Me mande um e-mail.</p>
       <div class="flex space-x-6 mt-6">

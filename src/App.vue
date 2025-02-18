@@ -1,6 +1,7 @@
 <script setup>
 import TheNav from './components/TheNav.vue'
 import SkillItem from './components/SkillItem.vue'
+import Divisor from './components/Divisor.vue'
 
 const skills = ['HTML', 'CSS', 'TailwindCSS', 'JavaScript', 'NodeJS', 'TypeScript', 'ReactJS', 'NextJS', 'VueJS', 'PHP', 'Laravel']
 
@@ -48,7 +49,7 @@ const projetosProfisionais = [
 
 <template>
   <header class="flex justify-center my-5">
-    <div class="container fixed py-2.5 px-4.5 flex justify-between items-center rounded-4xl bg-slate-200/20 border border-slate-200/30 backdrop-blur-sm shadow-md">
+    <div class="container fixed py-2.5 px-4.5 flex justify-between items-center rounded-4xl bg-slate-200/20 dark:bg-slate-900/20 border border-slate-200/30 dark:border-slate-700/30 backdrop-blur-sm shadow-md">
       <img src="@/assets/imagens/perfil-nathan-albuquerque.png" class="rounded-full" width="40" height="40" alt="Perfil Nathan Albuquerque">
       <TheNav/>
     </div>
@@ -56,38 +57,39 @@ const projetosProfisionais = [
 
   <div class="h-18"></div>
 
+  <!-- <main class="bg-gray-950/[2.5%] after:rounded-lg after:inset-ring after:inset-ring-gray-950/5 dark:after:inset-ring-white/10 bg-[image:radial-gradient(var(--pattern-fg)_1px,_transparent_0)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-gray-950)]/5 dark:[--pattern-fg:var(--color-white)]/10"> -->
   <main class="py-12 flex flex-col items-center gap-20">
 
     <div class="container" id="skills">
-      <h1 class="text-6xl font-black">Nathan Albuquerque</h1>
-      <p class="mt-8 text-4xl font-bold text-gray-800">Skills</p>
+      <h1 class="text-6xl font-black dark:text-white">Nathan Albuquerque</h1>
+      <p class="mt-8 text-4xl font-bold text-gray-800 dark:text-gray-300">Skills</p>
       <div class="mt-6 px-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 place-items-center">
         <SkillItem v-for="skill in skills" :key="skill" :titulo="skill"/>
       </div>
     </div>
 
-    <div class="container bg-radial from-slate-300 to-white to-60% h-px w-full"></div>
+    <Divisor/>
 
     <div class="container" id="projetos-profissionais">
-      <p class="text-4xl font-bold text-gray-800">Projetos Profisionais</p>
+      <p class="text-4xl font-bold text-gray-800 dark:text-gray-300">Projetos Profisionais</p>
       <div class="mt-6 px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center content-center">
 
-        <div v-for="projeto in projetosProfisionais" :key="projeto.url" class="w-full h-full max-h-max rounded-2xl bg-slate-100 border border-slate-300 shadow-md text-lg text-center hover:scale-105 transition cursor-default overflow-hidden">
-          <img class="border-b border-b-slate-300" :src="projeto.imagem" alt="">
+        <div v-for="projeto in projetosProfisionais" :key="projeto.url" class="w-full h-full max-h-max rounded-2xl bg-slate-100 border border-slate-300 dark:border-slate-600 dark:bg-gray-700 shadow-md text-lg text-center hover:scale-105 transition cursor-default overflow-hidden">
+          <img class="border-b border-b-slate-300 dark:border-b-slate-600" :src="projeto.imagem" alt="">
           <div class="pt-5 px-4 pb-8 text-left">
-            <h3 class="text-gray-900 text-lg">{{ projeto.nome }}</h3>
-            <p class="text-gray-800 text-sm">{{ projeto.servico }}</p>
+            <h3 class="text-gray-900 dark:text-gray-100 text-lg">{{ projeto.nome }}</h3>
+            <p class="text-gray-800 dark:text-gray-300 text-sm">{{ projeto.servico }}</p>
           </div>
         </div>
 
       </div>
     </div>
 
-    <div class="container bg-radial from-slate-300 to-white to-60% h-px w-full"></div>
+    <Divisor/>
 
     <div class="container" id="sobre-mim">
-      <p class="text-4xl font-bold text-gray-800">Sobre mim</p>
-      <p class="mt-4 text-xl text-gray-800">Jovem desenrolado, responsável e estudioso, tenho alguns projetos no ar, mas busco uma oportunidade remota. Se interessou pelos meus serviços? Me mande um e-mail.</p>
+      <p class="text-4xl font-bold text-gray-800 dark:text-gray-300">Sobre mim</p>
+      <p class="mt-4 text-xl text-gray-800 dark:text-gray-300">Jovem desenrolado, responsável e estudioso, tenho alguns projetos no ar, mas busco uma oportunidade remota. Se interessou pelos meus serviços? Me mande um e-mail.</p>
       <div class="flex space-x-6 mt-6">
         <a href="https://github.com/NathanAlbuquerque" target="_blank" rel="noopener noreferrer" class="w-14 h-14 grid place-content-center rounded-full bg-cyan-300 hover:scale-105 transition"><img src="@/assets/imagens/github.svg" width="38" height="38" alt=""></a>
         <a href="https://www.linkedin.com/in/nathan-albuquerque/" target="_blank" rel="noopener noreferrer" class="w-14 h-14 grid place-content-center rounded-full bg-cyan-300 hover:scale-105 transition"><img src="@/assets/imagens/linkedin.svg" width="28" height="28" alt=""></a>
@@ -95,8 +97,8 @@ const projetosProfisionais = [
     </div>
 
     <div class="container flex justify-between items-center">
-      <p class="text-sm font-bold">NathanAlbuquerque</p>
-      <p class="text-sm font-thin">&copy; 2025 Nathan Albuquerque</p>
+      <p class="text-sm font-bold dark:text-white">NathanAlbuquerque</p>
+      <p class="text-sm font-thin dark:text-white">&copy; 2025 Nathan Albuquerque</p>
     </div>
 
   </main>

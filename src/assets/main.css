@@ -3,9 +3,17 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --font-montserrat: "Montserrat", serif;
+    --font-montserrat: "Montserrat", serif
+}
+
+html {
+    @apply scroll-smooth
+}
+
+body {
+    @apply scroll-smooth bg-slate-950/[2.5%] dark:bg-slate-950 dark:after:inset-ring-white/10 bg-[image:radial-gradient(var(--pattern-fg)_1px,_transparent_0)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-slate-950)]/5 dark:[--pattern-fg:var(--color-white)]/10
 }
 
 a, h1 {
-    @apply font-montserrat;
+    @apply font-montserrat
 }

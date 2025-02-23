@@ -2,6 +2,9 @@
 import TheNav from './components/TheNav.vue'
 import SkillItem from './components/SkillItem.vue'
 import Divisor from './components/Divisor.vue'
+import GithubIcone from './components/icons/GithubIcone.vue';
+import EmailIcone from './components/icons/EmailIcone.vue';
+import LinkedinIcone from './components/icons/LinkedinIcone.vue';
 
 const skills = ['HTML', 'CSS', 'TailwindCSS', 'JavaScript', 'NodeJS', 'TypeScript', 'ReactJS', 'NextJS', 'VueJS', 'PHP', 'Laravel']
 
@@ -94,9 +97,9 @@ const projetosProfisionais = [
       <p class="text-4xl font-bold text-gray-800 dark:text-gray-300">Sobre mim</p>
       <p class="mt-4 text-xl text-gray-800 dark:text-gray-300">Jovem desenrolado, responsável e estudioso. Tenho alguns projetos no ar e mas busco uma oportunidade remota. Se interessou por estes serviços? Me envia um e-mail.</p>
       <div class="flex space-x-6 mt-6">
-        <a href="https://github.com/NathanAlbuquerque" target="_blank" rel="noopener noreferrer" class="w-14 h-14 grid place-content-center rounded-full bg-cyan-300 hover:scale-105 transition"><img src="@/assets/imagens/github.svg" width="38" height="38" alt=""></a>
-        <a href="https://www.linkedin.com/in/nathan-albuquerque/" target="_blank" rel="noopener noreferrer" class="w-14 h-14 grid place-content-center rounded-full bg-cyan-300 hover:scale-105 transition"><img src="@/assets/imagens/linkedin.svg" width="28" height="28" alt=""></a>
-        <a href="mailto:nathan.nra@outlook.com" target="_blank" rel="noopener noreferrer" class="w-14 h-14 grid place-content-center rounded-full bg-cyan-300 hover:scale-105 transition"><img src="@/assets/imagens/email.svg" width="38" height="38" alt=""></a>
+        <a href="https://github.com/NathanAlbuquerque" target="_blank" rel="noopener noreferrer" class="w-14 h-14 grid place-content-center rounded-full bg-cyan-300 hover:scale-105 transition"><GithubIcone/></a>
+        <a href="https://www.linkedin.com/in/nathan-albuquerque/" target="_blank" rel="noopener noreferrer" class="w-14 h-14 grid place-content-center rounded-full bg-cyan-300 hover:scale-105 transition"><LinkedinIcone/></a>
+        <a href="mailto:nathan.nra@outlook.com" target="_blank" rel="noopener noreferrer" class="w-14 h-14 grid place-content-center rounded-full bg-cyan-300 hover:scale-105 transition"><EmailIcone/></a>
       </div>
     </div>
 

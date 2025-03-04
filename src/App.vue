@@ -6,7 +6,7 @@ import GithubIcone from './components/icons/GithubIcone.vue';
 import EmailIcone from './components/icons/EmailIcone.vue';
 import LinkedinIcone from './components/icons/LinkedinIcone.vue';
 
-const skills = ['HTML', 'CSS', 'TailwindCSS', 'JavaScript', 'NodeJS', 'TypeScript', 'ReactJS', 'NextJS', 'VueJS', 'PHP', 'Laravel']
+const skills = ['Laravel', 'PHP', 'HTML', 'CSS', 'TailwindCSS', 'JavaScript', 'ReactJS', 'VueJS', 'Docker']
 
 const projetosProfisionais = [
   {
@@ -95,7 +95,7 @@ const projetosProfisionais = [
     <div class="container relative">
       <span class="absolute -top-30" id="sobre-mim"></span>
       <p class="text-4xl font-bold text-gray-800 dark:text-gray-300">Sobre mim</p>
-      <p class="mt-4 text-xl text-gray-800 dark:text-gray-300">Jovem desenrolado, responsável e estudioso. Tenho alguns projetos no ar e mas busco uma oportunidade remota. Se interessou por estes serviços? Me envia um e-mail.</p>
+      <p class="mt-4 text-xl text-gray-800 dark:text-gray-300">Jovem desenrolado, responsável e estudioso. Tenho alguns projetos no ar e mas busco uma oportunidade remota, foco em backend. Se interessou por estes serviços? Me envia um e-mail.</p>
       <div class="flex space-x-6 mt-6">
         <a href="https://github.com/NathanAlbuquerque" target="_blank" rel="noopener noreferrer" class="w-14 h-14 grid place-content-center rounded-full bg-cyan-300 hover:scale-105 transition"><GithubIcone/></a>
         <a href="https://www.linkedin.com/in/nathan-albuquerque/" target="_blank" rel="noopener noreferrer" class="w-14 h-14 grid place-content-center rounded-full bg-cyan-300 hover:scale-105 transition"><LinkedinIcone/></a>
